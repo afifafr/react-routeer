@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif; /* Ajouter une police de caractères plus professionnelle */
+  }
+  
+  .movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Ajouter un espace supplémentaire en haut */
+  }
+  
+  .movie-card {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  display: inline-table;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Ajouter un espace supplémentaire en haut */
+  }
+  
+  /* Supprimer les styles redondants pour .movie-card */
+  
+  .movie-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-card img {
+  width: 100%;
+  height: auto; /* Utiliser "auto" pour conserver les proportions de l'image */
+  object-fit: cover;
+  border-radius: 5px;
+  }
+  
+  .filter {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  }
+  
+  .filter input[type="text"] {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+  
+  .filter button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  }
+  
+  .filter button:hover {
+  background-color: #0056b3;
+  }
+  
+  .filter .search-icon {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #aaa;
+  }
+  
+  /* Ajouter un espacement entre les cartes de films */
+  .movie-card {
+  margin-bottom: 20px;
+  }
+  
+  /* Modifier la taille et la police du titre de la carte */
+  .movie-card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  /* Ajouter un espacement entre les éléments de la carte */
+  .movie-card .card-text {
+  margin-bottom: 10px;
+  }
+  
+  /* Modifier la taille du texte du pied de page de la carte */
+  .movie-card .card-footer p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #888;
+  }
+  
+  /* Ajouter une animation de fondu lors de l'affichage de la carte */
+  @keyframes fadeIn {
+  from {
+  opacity: 0;
+  }
+  to {
+  opacity: 1;
+  }
+  }
+  
+  .movie-card.animated {
+  animation: fadeIn 0.5s;
+  }
+
+  /*  les styles pour MovieDescription */
+.movie-description {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+  display: inline-block;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.movie-description h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.movie-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.trailer a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.trailer a:hover {
+  background-color: #0056b3;
+}
